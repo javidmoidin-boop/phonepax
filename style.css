@@ -1,0 +1,66 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin:0; 
+    padding:0; 
+    line-height:1.6; 
+}
+
+h1,h2,h3 { 
+    margin:10px 0; 
+}
+
+section { 
+    padding:50px 20px; 
+    max-width:1200px; 
+    margin:0 auto; 
+}
+
+#hero { 
+    background:#0d6efd; 
+    color:#fff; 
+    text-align:center; 
+    padding:80px 20px; 
+}
+
+#hero .btn { 
+    margin:10px; 
+    padding:12px 25px; 
+    background:#28a745; 
+    color:#fff; 
+    text-decoration:none; 
+    border-radius:5px; 
+}
+
+#hero .btn-outline { 
+    background:transparent; 
+    border:2px solid #fff; 
+    color:#fff; 
+}
+
+#why-choose ul, #about ul, #services ul { 
+    list-style:none; 
+    padding:0; 
+}
+
+#why-choose li::before { 
+    content:"✔ "; 
+    color:#28a745; 
+}
+
+.categories-grid { 
+    display:grid; 
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); 
+    gap:20px; 
+}
+
+.category { 
+    background:#f8f9fa; 
+    padding:20px; 
+    border-radius:8px; 
+}
+
+.btn { 
+    display:inline-block; 
+    margin-top:20px; 
+    padding:12px 20px; 
+    b
