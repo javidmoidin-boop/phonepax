@@ -1,66 +1,117 @@
-body { 
-    font-family: Arial, sans-serif; 
-    margin:0; 
-    padding:0; 
-    line-height:1.6; 
+/* ===== Global Styling ===== */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background: #f4f6f9;
+    color: #333;
 }
 
-h1,h2,h3 { 
-    margin:10px 0; 
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-weight: 600;
 }
 
-section { 
-    padding:50px 20px; 
-    max-width:1200px; 
-    margin:0 auto; 
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#hero { 
-    background:#0d6efd; 
-    color:#fff; 
-    text-align:center; 
-    padding:80px 20px; 
+/* ===== Hero Section ===== */
+#hero {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: #fff;
+    text-align: center;
+    padding: 100px 30px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
-#hero .btn { 
-    margin:10px; 
-    padding:12px 25px; 
-    background:#28a745; 
-    color:#fff; 
-    text-decoration:none; 
-    border-radius:5px; 
+#hero .btn {
+    margin: 12px;
+    padding: 14px 28px;
+    background: #ffc107;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-#hero .btn-outline { 
-    background:transparent; 
-    border:2px solid #fff; 
-    color:#fff; 
+#hero .btn:hover {
+    background: #ffca2c;
 }
 
-#why-choose ul, #about ul, #services ul { 
-    list-style:none; 
-    padding:0; 
+#hero .btn-outline {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
 }
 
-#why-choose li::before { 
-    content:"✔ "; 
-    color:#28a745; 
+#hero .btn-outline:hover {
+    background: #fff;
+    color: #0d6efd;
 }
 
-.categories-grid { 
-    display:grid; 
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); 
-    gap:20px; 
+/* ===== Lists Styling ===== */
+#why-choose ul, #about ul, #services ul {
+    list-style: none;
+    padding: 0;
 }
 
-.category { 
-    background:#f8f9fa; 
-    padding:20px; 
-    border-radius:8px; 
+#why-choose li::before {
+    content: "✔ ";
+    color: #28a745;
+    font-weight: bold;
 }
 
-.btn { 
-    display:inline-block; 
-    margin-top:20px; 
-    padding:12px 20px; 
-    b
+/* ===== Category Grid ===== */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.category {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #0d6efd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0b5ed7;
+}
+
+/* ===== Contact Section ===== */
+#contact {
+    background: #fff;
+    padding: 50px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
