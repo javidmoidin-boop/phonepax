@@ -147,9 +147,3 @@ form input, form textarea{
   border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.08)
 }
 
-.brand .logo {
-  height: 40px;       /* adjust size */
-  width: auto;        /* maintain aspect ratio */
-  vertical-align: middle;
-  margin-right: 8px;  /* space between logo and text */
-}
