@@ -47,8 +47,29 @@ h1{font-size:30px;margin:0 0 6px;color:#fff}
 
 /* hero placeholder minimal art */
 .hero-placeholder{display:flex;gap:12px;align-items:center;justify-content:center}
-.box{background:rgba(255,255,255,0.25);border-radius:8px;border:1px solid rgba(255,255,255,0.3)}
-.box.large{width:340px;height:220px}
+.box{
+  background:rgba(255,255,255,0.25);
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.3)
+}
+
+/* UPDATED: Large box with logo centered */
+.box.large{
+  width:340px;
+  height:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+/* Logo style inside hero box */
+.box-logo{
+  max-width:90%;
+  max-height:90%;
+  object-fit:contain;
+}
+
 .box.small{width:120px;height:90px}
 
 /* SECTION base */
@@ -146,4 +167,3 @@ form input, form textarea{
   padding:12px;position:absolute;top:64px;left:20px;right:20px;
   border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.08)
 }
-
